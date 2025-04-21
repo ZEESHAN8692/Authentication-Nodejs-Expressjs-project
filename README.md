@@ -1,6 +1,7 @@
-## Authentication Project 
+## Authentication Project
 
-# Using 
+# Using
+
 1. Node.js
 2. Express.js
 3. mongoDB Database
@@ -8,3 +9,5 @@
 5. CSS
 6. BOOTSTARP
 7. EJS Template
+8. Session
+9. bcrypt
