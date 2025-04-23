@@ -40,6 +40,9 @@ const checkLogin = (req, res, next) => {
 app.get("/", checkLogin, (req, res) => {
   res.render("home", { sessionKey: req.session.sessionKey });
 });
+app.get("/about", checkLogin, (req, res) => {
+  res.render("about", { sessionKey: req.session.sessionKey });
+});
 app.get("/login", (req, res) => {
   if (req.session.sessionKey) {
     res.redirect("/");
