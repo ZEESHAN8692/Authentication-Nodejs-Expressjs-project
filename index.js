@@ -13,10 +13,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // server
-// const PORT = process.env.PORT;
-// app.listen(PORT, () => {
-//   console.log(`Successfull connected Port http://localhost:${PORT}/`);
-// });
+const PORT = process.env.PORT;
+app.listen(PORT, () => {
+  console.log(`Successfull connected Port http://localhost:${PORT}/`);
+});
 
 //Database
 Database();
